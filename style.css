@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    overflow-x: hidden;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+#spinnersParent{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+
+.gradientSpin{
+    position: relative;
+    background: purple;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: all .2s ease-out;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.gradientSpin:hover{
+    transform: scale(1.03);
+    filter: saturate(200%)
+}
+
+.gradientSpin > h1{
+    position: absolute;
+    transform: translateY(50px);
+    font-size: 1.5rem;
+    font-family: 'Courier New';
+    color: white;
+}
