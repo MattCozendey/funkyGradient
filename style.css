@@ -28,7 +28,7 @@ body{
 #spinnersParent{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 2rem;
     flex-wrap: wrap;
     width: 100%;
