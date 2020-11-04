@@ -1,7 +1,7 @@
 const CONFIG = {
     isDarkMode: false,
     lightRadius: 500,
-    fibonnaci: [false, 9],
+    fibonnaci: [false, 8],
     inferno: [false, 18],
 }
 const gradientParentDiv = document.getElementById("spinnersParent");
@@ -118,8 +118,8 @@ else if(CONFIG.inferno[0]){
         newGradient.dataset.has_counter = "false";
         newGradient.dataset.width = "200";
         newGradient.dataset.height = "200";
-        newGradient.dataset.primary="red";
-        newGradient.dataset.secundary="black";
+        newGradient.dataset.primary="black";
+        newGradient.dataset.secundary="red";
         newGradient.dataset.radius= "10px";
 
         gradientParentDiv.appendChild(newGradient);
